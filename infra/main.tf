@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "bucket" {
   bucket_prefix = "amt-retirement-calc"
   acl    = "public-read"
-
+  force_destroy = true
 
   website {
     index_document = "index.html"
